@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a9779f32c57a901368d16e7e4516e45",
+    "content-hash": "222a2d254e7514b4fefdc54a2d363da4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -188,6 +188,154 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v4.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "7c6e088228b9f082050876ae8b0cd287b117b840"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/7c6e088228b9f082050876ae8b0cd287b117b840",
+                "reference": "7c6e088228b9f082050876ae8b0cd287b117b840",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4 || >=4,<4.3",
+                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                "twig/twig": "<2.12.1"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.0|^6.0|^7.0|^8.0",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6.8",
+                "mockery/mockery": "^1.3",
+                "nette/di": "~2.4",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "symfony/config": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.4 || ^6.0",
+                "twig/twig": "^2.12.1 || ~3.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                },
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "support": {
+                "issues": "https://github.com/cocur/slugify/issues",
+                "source": "https://github.com/cocur/slugify/tree/v4.5.1"
+            },
+            "time": "2023-09-17T07:26:20+00:00"
+        },
+        {
+            "name": "cviebrock/eloquent-sluggable",
+            "version": "11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+                "reference": "8fafec4b3c61e1b87ec9cbe728a75ce3b6ca1c06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/8fafec4b3c61e1b87ec9cbe728a75ce3b6ca1c06",
+                "reference": "8fafec4b3c61e1b87ec9cbe728a75ce3b6ca1c06",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "^4.3",
+                "illuminate/config": "^11.0",
+                "illuminate/database": "^11.0",
+                "illuminate/support": "^11.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^2.28"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cviebrock\\EloquentSluggable\\ServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "11.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cviebrock\\EloquentSluggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Viebrock",
+                    "email": "colin@viebrock.ca"
+                }
+            ],
+            "description": "Easy creation of slugs for your Eloquent models in Laravel",
+            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+            "keywords": [
+                "eloquent",
+                "eloquent-sluggable",
+                "laravel",
+                "lumen",
+                "slug",
+                "sluggable"
+            ],
+            "support": {
+                "issues": "https://github.com/cviebrock/eloquent-sluggable/issues",
+                "source": "https://github.com/cviebrock/eloquent-sluggable/tree/11.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/cviebrock",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-13T02:44:01+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -1155,6 +1303,90 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "intervention/image",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/04be355f8d6734c826045d02a1079ad658322dad",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1 || ^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^7.5.15"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@intervention.io",
+                    "homepage": "https://intervention.io/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/image/issues",
+                "source": "https://github.com/Intervention/image/tree/2.7.2"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/interventionio",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Intervention",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-21T17:30:32+00:00"
+        },
+        {
             "name": "laravel/fortify",
             "version": "v1.21.2",
             "source": {
@@ -1740,6 +1972,167 @@
             "time": "2024-01-04T16:10:04+00:00"
         },
         {
+            "name": "lasserafn/php-initial-avatar-generator",
+            "version": "4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LasseRafn/php-initial-avatar-generator.git",
+                "reference": "ffe43d8df3f18646d7b23011272cce2d71400e1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LasseRafn/php-initial-avatar-generator/zipball/ffe43d8df3f18646d7b23011272cce2d71400e1f",
+                "reference": "ffe43d8df3f18646d7b23011272cce2d71400e1f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "intervention/image": "^2.3",
+                "lasserafn/php-initials": "^3.0",
+                "lasserafn/php-string-script-language": "^0.4",
+                "meyfa/php-svg": "^0.9.0",
+                "overtrue/pinyin": "^4.0",
+                "php": "^7.0|^7.1|^7.2|^7.3|^7.4|^8.0|^8.1|^8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LasseRafn\\InitialAvatarGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lasse Rafn",
+                    "email": "lasserafn@gmail.com"
+                }
+            ],
+            "description": "A package to generate avatars with initials for PHP",
+            "keywords": [
+                "Initials",
+                "avatar",
+                "image",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/LasseRafn/php-initial-avatar-generator/issues",
+                "source": "https://github.com/LasseRafn/php-initial-avatar-generator/tree/4.3"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/ui-avatars",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-07-26T19:17:56+00:00"
+        },
+        {
+            "name": "lasserafn/php-initials",
+            "version": "3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LasseRafn/php-initials.git",
+                "reference": "d287e1542687390eb68de779949bc0adc49e2d52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LasseRafn/php-initials/zipball/d287e1542687390eb68de779949bc0adc49e2d52",
+                "reference": "d287e1542687390eb68de779949bc0adc49e2d52",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6|^7.0|^7.1|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LasseRafn\\Initials\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lasse Rafn",
+                    "email": "lasserafn@gmail.com"
+                }
+            ],
+            "description": "A package to generate initials in PHP",
+            "keywords": [
+                "Initials",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/LasseRafn/php-initials/issues",
+                "source": "https://github.com/LasseRafn/php-initials/tree/3.1"
+            },
+            "time": "2020-12-24T12:25:51+00:00"
+        },
+        {
+            "name": "lasserafn/php-string-script-language",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LasseRafn/php-string-script-language.git",
+                "reference": "cab5612d4382067de855fcecc7c09108dca77fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LasseRafn/php-string-script-language/zipball/cab5612d4382067de855fcecc7c09108dca77fb5",
+                "reference": "cab5612d4382067de855fcecc7c09108dca77fb5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6|^7.0|^7.1|^8.0|^8.1|^8.2"
+            },
+            "require-dev": {
+                "doctrine/instantiator": "1.0.5",
+                "phpunit/phpunit": "^5.6",
+                "phpunit/phpunit-mock-objects": "3.2.4",
+                "satooshi/php-coveralls": "^1.0",
+                "sebastian/exporter": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LasseRafn\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lasse Rafn",
+                    "email": "lasserafn@gmail.com"
+                }
+            ],
+            "description": "Detect language/encoding of a string in PHP",
+            "keywords": [
+                "language",
+                "php",
+                "string"
+            ],
+            "support": {
+                "issues": "https://github.com/LasseRafn/php-string-script-language/issues",
+                "source": "https://github.com/LasseRafn/php-string-script-language/tree/0.4"
+            },
+            "time": "2023-07-26T07:23:39+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "2.4.2",
             "source": {
@@ -2207,6 +2600,137 @@
                 }
             ],
             "time": "2024-05-02T17:10:37+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "b8174494eda667f7d13876b4a7bfef0f62a7c0d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/b8174494eda667f7d13876b4a7bfef0f62a7c0d1",
+                "reference": "b8174494eda667f7d13876b4a7bfef0f62a7c0d1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "php-64bit": "^8.1"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "guzzlehttp/guzzle": "^7.5",
+                "mikey179/vfsstream": "^1.6",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpunit": "^10.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "suggest": {
+                "guzzlehttp/psr7": "^2.4",
+                "psr/http-message": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/zipstream",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-06-21T14:59:35+00:00"
+        },
+        {
+            "name": "meyfa/php-svg",
+            "version": "v0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/meyfa/php-svg.git",
+                "reference": "34401edef1f724898f468f71b85505fbcc8351bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/meyfa/php-svg/zipball/34401edef1f724898f468f71b85505fbcc8351bb",
+                "reference": "34401edef1f724898f468f71b85505fbcc8351bb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-simplexml": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "meyfa/phpunit-assert-gd": "^1.1",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SVG\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Meyer",
+                    "homepage": "http://meyfa.net"
+                }
+            ],
+            "description": "Read, edit, write, and render SVG files with PHP",
+            "homepage": "https://github.com/meyfa/php-svg",
+            "keywords": [
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/meyfa/php-svg/issues",
+                "source": "https://github.com/meyfa/php-svg/tree/v0.9.1"
+            },
+            "time": "2019-07-30T18:41:25+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2772,6 +3296,79 @@
                 }
             ],
             "time": "2024-03-06T16:17:14+00:00"
+        },
+        {
+            "name": "overtrue/pinyin",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/pinyin.git",
+                "reference": "4d0fb4f27f0c79e81c9489e0c0ae4a4f8837eae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/pinyin/zipball/4d0fb4f27f0c79e81c9489e0c0ae4a4f8837eae7",
+                "reference": "4d0fb4f27f0c79e81c9489e0c0ae4a4f8837eae7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.7",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "~8.0"
+            },
+            "type": "library",
+            "extra": {
+                "hooks": {
+                    "pre-commit": [
+                        "composer test",
+                        "composer fix-style"
+                    ],
+                    "pre-push": [
+                        "composer test",
+                        "composer check-style"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/const.php"
+                ],
+                "psr-4": {
+                    "Overtrue\\Pinyin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com",
+                    "homepage": "http://github.com/overtrue"
+                }
+            ],
+            "description": "Chinese to pinyin translator.",
+            "homepage": "https://github.com/overtrue/pinyin",
+            "keywords": [
+                "Chinese",
+                "Pinyin",
+                "cn2pinyin"
+            ],
+            "support": {
+                "issues": "https://github.com/overtrue/pinyin/issues",
+                "source": "https://github.com/overtrue/pinyin/tree/4.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/overtrue",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-27T10:17:12+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -3682,6 +4279,444 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/image",
+            "version": "3.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image.git",
+                "reference": "e1423322494d5f5f00fa518756a87b6e7b19bd19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image/zipball/e1423322494d5f5f00fa518756a87b6e7b19bd19",
+                "reference": "e1423322494d5f5f00fa518756a87b6e7b19bd19",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^8.2",
+                "spatie/image-optimizer": "^1.7.2",
+                "spatie/temporary-directory": "^2.2",
+                "symfony/process": "^6.4|^7.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "ext-imagick": "*",
+                "pestphp/pest": "^2.28",
+                "phpstan/phpstan": "^1.10.50",
+                "spatie/pest-plugin-snapshots": "^2.1",
+                "spatie/pixelmatch-php": "^1.0",
+                "spatie/ray": "^1.40.1",
+                "symfony/var-dumper": "^6.4|7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manipulate images with an expressive API",
+            "homepage": "https://github.com/spatie/image",
+            "keywords": [
+                "image",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/image/tree/3.6.1"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-17T15:18:24+00:00"
+        },
+        {
+            "name": "spatie/image-optimizer",
+            "version": "1.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image-optimizer.git",
+                "reference": "43aff6725cd87bb78ccd8532633cfa8bdc962505"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/43aff6725cd87bb78ccd8532633cfa8bdc962505",
+                "reference": "43aff6725cd87bb78ccd8532633cfa8bdc962505",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.3|^8.0",
+                "psr/log": "^1.0 | ^2.0 | ^3.0",
+                "symfony/process": "^4.2|^5.0|^6.0|^7.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.21",
+                "phpunit/phpunit": "^8.5.21|^9.4.4",
+                "symfony/var-dumper": "^4.2|^5.0|^6.0|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily optimize images using PHP",
+            "homepage": "https://github.com/spatie/image-optimizer",
+            "keywords": [
+                "image-optimizer",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/image-optimizer/issues",
+                "source": "https://github.com/spatie/image-optimizer/tree/1.7.5"
+            },
+            "time": "2024-05-16T08:48:33+00:00"
+        },
+        {
+            "name": "spatie/laravel-medialibrary",
+            "version": "11.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-medialibrary.git",
+                "reference": "424afe6168b9aa49b2430d3f45f08eea904255b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/424afe6168b9aa49b2430d3f45f08eea904255b1",
+                "reference": "424afe6168b9aa49b2430d3f45f08eea904255b1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-fileinfo": "*",
+                "ext-json": "*",
+                "illuminate/bus": "^10.0|^11.0",
+                "illuminate/conditionable": "^10.0|^11.0",
+                "illuminate/console": "^10.0|^11.0",
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/pipeline": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "maennchen/zipstream-php": "^3.1",
+                "php": "^8.2",
+                "spatie/image": "^3.3.2",
+                "spatie/laravel-package-tools": "^1.16.1",
+                "spatie/temporary-directory": "^2.2",
+                "symfony/console": "^6.4.1|^7.0"
+            },
+            "conflict": {
+                "php-ffmpeg/php-ffmpeg": "<0.6.1"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.293.10",
+                "ext-imagick": "*",
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": "^7.8.1",
+                "larastan/larastan": "^2.7",
+                "league/flysystem-aws-s3-v3": "^3.22",
+                "mockery/mockery": "^1.6.7",
+                "orchestra/testbench": "^7.0|^8.17|^9.0",
+                "pestphp/pest": "^2.28",
+                "phpstan/extension-installer": "^1.3.1",
+                "spatie/laravel-ray": "^1.33",
+                "spatie/pdf-to-image": "^2.2",
+                "spatie/pest-plugin-snapshots": "^2.1"
+            },
+            "suggest": {
+                "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
+                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails",
+                "spatie/pdf-to-image": "Required for generating thumbnails of PDFs and SVGs"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\MediaLibrary\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Associate files with Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-medialibrary",
+            "keywords": [
+                "cms",
+                "conversion",
+                "downloads",
+                "images",
+                "laravel",
+                "laravel-medialibrary",
+                "media",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-medialibrary/issues",
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-16T08:53:13+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-20T07:29:11+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "6.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "17607924aa0aa89bc0153c2ce45ed7c55083367b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/17607924aa0aa89bc0153c2ce45ed7c55083367b",
+                "reference": "17607924aa0aa89bc0153c2ce45ed7c55083367b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/container": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/database": "^8.12|^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/passport": "^11.0|^12.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.4|^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.x-dev",
+                    "dev-master": "6.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 8.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/6.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-04-19T12:35:28+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "76949fa18f8e1a7f663fd2eaa1d00e0bcea0752a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/76949fa18f8e1a7f663fd2eaa1d00e0bcea0752a",
+                "reference": "76949fa18f8e1a7f663fd2eaa1d00e0bcea0752a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "php",
+                "spatie",
+                "temporary-directory"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/temporary-directory/issues",
+                "source": "https://github.com/spatie/temporary-directory/tree/2.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-12-25T11:46:58+00:00"
         },
         {
             "name": "symfony/clock",
