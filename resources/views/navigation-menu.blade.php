@@ -8,6 +8,9 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         Dashboard
                     </x-nav-link>
+                    <x-nav-link href="{{ route('posts.index') }}" :active="request()->routeIs('posts.*')">
+                        Posts
+                    </x-nav-link>
                 </div>
             </div>
 

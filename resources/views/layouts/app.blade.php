@@ -38,7 +38,7 @@
                     {{ $slot }}
                 </main>
                 <aside class="w-full md:w-1/4 flex flex-col px-3">
-                    <slot name="side" />
+                    {{ $side }}
                 </aside>
             </div>
             @else
